@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var start;
+		var stop;
+		$('body').mousedown(function(event){
+			start = event.timeStamp;
+			// console.log(start);
+		})
+
+		$('body').mouseup(function(event){
+			stop = event.timeStamp;
+			console.log(stop-start);
+		})
+
+		})
+</script>
+	<title></title>
+</head>
+
+
+<body>
+<div>Click me</div>
+
+</body>
+</html>
