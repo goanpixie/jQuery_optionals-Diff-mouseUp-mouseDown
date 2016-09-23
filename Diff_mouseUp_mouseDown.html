@@ -4,19 +4,34 @@
 <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
 <script type="text/javascript">
 	$(document).ready(function(){
+		// var start;
+		// var stop;
+		// $('body').mousedown(function(event){
+		// 	start = event.timeStamp;
+		// 	// console.log(start);
+		// })
+
+		// $('body').mouseup(function(event){
+		// 	stop = event.timeStamp;
+		// 	console.log(stop-start);
+		// })
+
 		var start;
 		var stop;
 		$('body').mousedown(function(event){
-			start = event.timeStamp;
+			start = console.time("start");
+			start2 = console.time("start2")
+
 			// console.log(start);
 		})
 
 		$('body').mouseup(function(event){
-			stop = event.timeStamp;
-			console.log(stop-start);
+			stop = console.timeEnd("start");
+			console.log(stop);
 		})
 
-		})
+	})
+
 </script>
 	<title></title>
 </head>
